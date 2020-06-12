@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Julia Fehr - Portfolio Site</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Karla%7CRubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <a role="image by" href="https://pixabay.com/users/Fotocitizen-397314/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1501710">Jorge Guillen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1501710">Pixabay</a> -->
+</head>
+<body class="herobody">
+    <header class="nav-bar">
+        <ul class="nav">
+            <li class="nav-item"><a id="index" onclick="loadPage('index')">Home</a></li>
+            <li class="nav-item"><a id="projects" onclick="loadPage('projects')">Projects</a></li>
+            <li class="nav-item"><a id="about" onclick="loadPage('about')">About</a></li>
+            <li class="nav-item"><a id="contact" onclick="loadPage('contact')">Contact</a></li>
+            <li class="hamburger"><img id="hamburger" src="pictures/hamburger.png" onclick="onMenu()" alt="Hamburger Menu for Smaller Screensize"></li>
+        </ul>
+    </header>
+    <main class="mainload">
+        <div id="menuoverlay">
+            <div id="menutext">
+            </div>  
+        </div>
+        <div class="main heromain">    
+            <section class = "hero">
+                <h1>Julia Fehr</h1>
+                <p>Mechanical Engineer, Full Stack Web Developer, and Sci-Fi Enthusiast. I am interested in creating seamless interactions between technology and end users.</p>
+                <p>I have added some of my favorite pictures to the site. Enjoy!</p>
+                <div class="imgcontainer">
+                    <img src="pictures/water.JPG" alt="smooth stones in water" class="img">
+                    <p class="picturedescription">Smooth stones on the Mediterranean Coast</p>
+                </div>
+            </section>
+        </div> 
+    </main>
+    <footer class="contact">
+            <h3 class="contactfooter"><u><a onclick="loadPage('contact')">Contact Julia Fehr</a></u></h3>
+    </footer>
+    <script
+     src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+</html>
