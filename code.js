@@ -1,97 +1,3 @@
-const STORE = [
-    {
-        title: "Game of Thrones Quiz",
-        description: "A simple quiz on the subject of Game of Thrones",
-        languages: "HTML, CSS, JavaScript, jQuery",
-        clientRepoLink: "https://github.com/juliawithers/quiz-app",
-        apiRepoLink: '',
-        liveLink: "https://juliawithers.github.io/quiz-app/",
-        thumb:
-        {
-            smallThumb: "pictures/GOT_Thumb_Original.PNG",
-            altSmallThumb: "Game of Thrones Quiz App Thumbnail"
-        },
-        overlayThumbs: [
-            {
-                bigThumb: "pictures/GOT_Thumb_Question.PNG",
-                altBigThumb: "Game of Thrones Question 1"
-            },
-            {
-                bigThumb: "pictures/GOT_Thumb_Question_correct.PNG",
-                altBigThumb: "Correct Answer Screenshot"
-            },
-            {
-                bigThumb: "pictures/GOT_Thumb_Question_incorrect.PNG",
-                altBigThumb: "In Answer Screenshot"
-            }
-        ],
-        overlayID: "GOT",
-    },
-    {
-        title: "inSUREance",
-        description: "Find providers near you that take your insurance.",
-        languages: "HTML, CSS, JavaScript, jQuery",
-        clientRepoLink: "https://github.com/juliawithers/inSUREance",
-        apiRepoLink: '',
-        liveLink: "https://juliawithers.github.io/inSUREance/",
-        thumb:
-        {
-            smallThumb: "pictures/LandingPage.PNG",
-            altSmallThumb: "inSUREance App Thumbnail"
-        },
-        overlayThumbs: [
-            {
-                bigThumb: "pictures/LandingPage.PNG",
-                altBigThumb: "Landing page for inSUREance"
-            },
-            {
-                bigThumb: "pictures/ResultsLoaded.PNG",
-                altBigThumb: "Results loaded"
-            },
-            {
-                bigThumb: "pictures/ShowMore.PNG",
-                altBigThumb: "Short configuration for results"
-            },
-            {
-                bigThumb: "pictures/ShowLess.PNG",
-                altBigThumb: "Long configuration for results"
-            }
-        ],
-        overlayID: "ins"
-    },
-    {
-        title: "Virtual Fight Club",
-        description: "Create a character and fight opponents!",
-        languages: "React, NodeJs, ExpressJS, PostgreSQL, HTML, CSS, JavaScript, jQuery",
-        clientRepoLink: "https://github.com/juliawithers/virtual-fight-club",
-        apiRepoLink: "https://github.com/juliawithers/vfc-api",
-        liveLink: "https://virtual-fight-club.now.sh/",
-        thumb:
-        {
-            smallThumb: "pictures/VFCLandingPage.PNG",
-            altSmallThumb: "Virtual Fight Club App Thumbnail"
-        },
-        overlayThumbs: [
-            {
-                bigThumb: "pictures/VFCLandingPage.PNG",
-                altBigThumb: "Landing page for Virtual Fight Club"
-            },
-            {
-                bigThumb: "pictures/VFCFightPage.PNG",
-                altBigThumb: "Fight Page for Virtual Fight Club"
-            },
-            {
-                bigThumb: "pictures/VFCCharacterPage.PNG",
-                altBigThumb: "Character Description and Update Page for Virtual Fight Club"
-            },
-            {
-                bigThumb: "pictures/VFCAboutPage.PNG",
-                altBigThumb: "About Page for Virtual Fight Club"
-            }
-        ],
-        overlayID: "ins"
-    },
-]
 
 // Load each page:
 function loadPage(page) {
@@ -131,7 +37,8 @@ function loadPage(page) {
         <div class = "main" class="projectsmain">
             <section class = "projects">
                 <h1>Projects</h1>
-                <p>Click on the thumbnails to see more screenshots</p>
+                <p>Below are some of the projects I have worked on in the last few months.</p>
+                <p>Click on the thumbnails to see more screenshots.</p>
                 <div class = "art-cont">
 
                 </div>
@@ -142,13 +49,12 @@ function loadPage(page) {
 
     // Use the STORE object to create the articles
     function renderProjects(STORE) {
-
         for (let i = 0; i < STORE.length; i++) {
             if (STORE[i].apiRepoLink === '') {
                 $('.art-cont').append(
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                        <p>${STORE[i].description}</p>
+                        <p>${STORE[i].short_description}</p>
                         <button class="thumbButton" onclick="on()">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
                         </button> 
@@ -161,7 +67,7 @@ function loadPage(page) {
                 $('.art-cont').append(
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                        <p>${STORE[i].description}</p>
+                        <p>${STORE[i].short_description}</p>
                         <button class="thumbButton" onclick="on()">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
                         </button>    
@@ -186,8 +92,9 @@ function loadPage(page) {
         <div class = "main" class="aboutmain">         
             <section class = "about-me">
                 <h1>About Me</h1>
-                <p>I was born and raised in Atlanta. I currently enrolled in the Front End Web Development Career Path boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I have seen firsthand the importance of user friendly interfaces. Currently I am focusing on UX/UI.</p><br>
-                <p>I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times.</p>
+                <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I have seen firsthand the importance of user-friendly interfaces. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off one another, and 3) commitment to community outreach programs. </p><br>
+                <p>Why the switch? Good question. I enjoy engineering quite a bit! I love to work with my hands and to solve complex problems. I was able to do a lot of traveling during my engineering career, but with that came a physical toll. I also stopped learning, as I'd been boxed into a niche of knowledge. My goal in life is to keep learning for as long as I am able in any field, and engineering just couldn't fulfill this for me. I have always loved coding and it was just the right time to dive in and learn. So far it's been one of the best decisions I have ever made. I can't wait to complete my career change and I couldn't be happier!<p><br>
+                <p>A bit more about me: I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times. When I was younger I loved to volunteer and it has been several years since I had the time or energy, but community outreach is something I am passionate about and would like to start doing again.</p>
                 <div class="imgcontainer">
                     <img src="pictures/skyline.JPG" alt="The Atlanta Skyline" class="img">
                     <p class="picturedescription">The Atlanta Skyline from the top of the Clermont Lounge</p>
@@ -256,9 +163,9 @@ function on() {
                         `<section class="overlay" onclick="off()">
                             <img id="x" src="pictures/x_out.png" onclick="off()">
                             <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                            <p>${STORE[i].description}</p>
+                            <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
-                                <div class="buttonhome">
+                                <div class="buttonhome-overlay">
                                     <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">View Repo</a></button>
                                     <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">View Live</a></button>
                                 </div> 
@@ -273,9 +180,9 @@ function on() {
                         `<section class="overlay" onclick="off()">
                             <img id="x" src="pictures/x_out.png" onclick="off()">
                             <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                            <p>${STORE[i].description}</p>
+                            <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
-                                <div class="buttonhome">
+                                <div class="buttonhome-overlay">
                                     <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client Repo</a></button>
                                     <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API Repo</a></button>
                                     <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">View Live</a></button>
