@@ -9,7 +9,7 @@ body>.mainload{
     padding: 50px 0px 0;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 95vh;
     background-image: url('pictures/charcoal.jpg');
     background-size: cover;
@@ -46,6 +46,7 @@ main{
     justify-content: flex-end;
     height: 50px;
     cursor: pointer;
+    padding-bottom: 5px;
 }
 .nav{
     padding: 0;
@@ -65,17 +66,32 @@ main{
 .nav-item{
     display: none;
 }
+.nav-button{
+    border: none;
+    background: white;
+    font-weight: bold;
+}
 .ham-nav-item{
     list-style-type: none;
     text-align: center;  
 }
-.ham-nav-item>a{
+.ham-nav-item>button>a{
     font-size: 140%;
     color: black;
     cursor: pointer;
 }
 .ham-nav-item>a:hover{
     font-weight: bold;
+}
+.nav-button{
+    font-size: 120%;
+    color: black;
+    cursor: pointer;
+}
+.ham-nav-item>.nav-button{
+    font-size: 170%;
+    color: black;
+    cursor: pointer;
 }
 #menuoverlay {
     position: fixed;
@@ -101,9 +117,14 @@ main{
     padding: 0px;
     height: 90vh;
 }
+.menuoverlay> nav{
+    padding: 0px;
+    height: 90vh;
+}
 #x{
     float: right;
     width: 30px;
+    padding: 2px;
 }
 /* Text for h1,h2,h3,p,a,legend, and inputs */
 h1,h2,h3{
@@ -175,15 +196,17 @@ main>.imgcontainer{
     flex-direction: column;
     justify-content: space-between;
 }
-.button{
+.alink{
     border: 1px solid black;
     height: 30px;
     background: white;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-top: 15px;
     text-align: center;
     padding: 0px;
+    text-decoration: none;
+    line-height: 1.75;
 }
 .buttonhome{
     display: none;
@@ -206,7 +229,14 @@ main>.imgcontainer{
     margin: 7px;
     font-size: 12px;
 }
-.articles >.thumbnail{
+.anchor{
+    background-color: white;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+.anchor >.thumbnail{
     width:100px;
     height:100px;
 }
@@ -216,13 +246,13 @@ main>.imgcontainer{
 .articles>.projectTitle{
     font-size: 115%;
 }
-.thumbButton>.thumbnail{
+.anchor>.thumbnail{
     width:80px;
     height:80px;
     cursor: pointer;
     display: block;
 }
-.articles>.thumbButton{
+.anchor>.thumbnail{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -230,7 +260,7 @@ main>.imgcontainer{
     border: none;
     box-shadow: 3px 3px #5085a5;
 }
-.thumbButton:hover{
+.thumbnail:hover{
     box-shadow: 5px 5px #5085a5;
 }
 #overlay {
@@ -327,12 +357,16 @@ textarea{
     height: 30px;
     width: 100%; 
 }
-.thumbButton {
+.anchor>.thumbnail {
     margin-bottom: 10px;
 }  
+.anchor:focus img{
+    box-shadow: 5px 5px #5085a5;
+}
 .repo, .live {
     width: 60px;
-    /* text-align: center; */
+    margin-top: auto;
+    margin-bottom: auto;
 }
 @media screen and (min-width: 350px) {
     .articles{
@@ -340,23 +374,21 @@ textarea{
         width: 275px;
         min-width: 250px;
     }
-    .articles >.thumbnail{
+    .anchor >.thumbnail{
         width:110px;
         height:110px;
         margin-top: auto;
-        margin-bottom: auto;
     }
     .articles > p{
         line-height: 21px;
         margin: 7px;
         font-size: 12px;
     }
-    .thumbButton>.thumbnail{
+    .anchor>.thumbnail{
         width:110px;
         height:110px;
         cursor: pointer;
         display: block;
-        /* padding-bottom: 15px; */
     }    
 }
 
@@ -389,12 +421,7 @@ textarea{
         display: block;
         list-style-type: none;
     }
-    .nav-item>a{
-        font-size: 120%;
-        color: black;
-        cursor: pointer;
-    }
-    .thumbButton>.thumbnail{
+    .anchor>.thumbnail{
         width: 110px;
         height: 110px;
     }
@@ -402,8 +429,10 @@ textarea{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding-bottom: 5px;
+        padding-bottom: 5px;
     }  
-    .thumbButton {
+    .anchor>.thumbnail {
         margin-bottom: 0px;
     }
 }
@@ -420,7 +449,6 @@ textarea{
    .img{
        max-width: 750px;
    }
-   
 }
 @media screen and (min-width: 1000px){
     section{
@@ -430,21 +458,17 @@ textarea{
 }
 @media screen and (min-width: 1150px){
     .articles{
-        width: 600px;
+        width: 700px;
         height: 400px;
         margin: 15px;
     }
     /* adjust the thumbnail image size */
-    .articles >.thumbnail{
-        width: 300px;
-        height: 300px;
+    .anchor>.thumbnail{
+        width: 210px;
+        height: 210px;
     }
     .articles > p{
         font-size: 16px;
-    }
-    .thumbButton>.thumbnail{
-        width:200px;
-        height:200px;
     }
     .art-cont{
         display: flex;

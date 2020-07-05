@@ -3,6 +3,7 @@
 function loadPage(page) {
     // if contact/about/project/home load those pages
     // load contact page
+    // load contact page when link at bottom is clicked
     if (page === 'contact') {
         $('.mainload').html(
             `
@@ -14,9 +15,9 @@ function loadPage(page) {
             <section class = "contact-page">
                 <h1>Contact and Links for Julia Fehr</h1>
                 <div class="links">
-                    <button class="linkedin"><a href="https://linkedin.com/in/julia-fehr-b5447b41" target="_blank">LinkedIn</a></button>
-                    <button class="email"><a href="mailto:09jwithers@gmail.com">Email</a></button>
-                    <button class="github"><a href="https://github.com/juliawithers" target="_blank">Github</a></button>
+                    <a href="https://linkedin.com/in/julia-fehr-b5447b41" target="_blank">LinkedIn</a>
+                    <a href="mailto:09jwithers@gmail.com">Email</a>
+                    <a href="https://github.com/juliawithers" target="_blank">Github</a>
                 </div> 
                 <div class="imgcontainer">
                 <img src="pictures/stain.JPG" alt="Beautiful stain glass of St. Chapelle, Paris" class="img">
@@ -55,12 +56,12 @@ function loadPage(page) {
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
                         <p>${STORE[i].short_description}</p>
-                        <button class="thumbButton" onclick="on()">
+                        <button class="anchor" onclick="on()" id="${STORE[i].overlayID}">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
-                        </button> 
+                        </button>
                         <div class="buttonhome">
-                            <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a></button>
-                            <button class="button live"><a class="alink" href="${STORE[i].liveLink}" target="_blank">Live</a></button>
+                            <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a>
+                            <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
                         </div>   
                     </article>`)
             } else if (STORE[i].apiRepoLink !== '') {
@@ -68,13 +69,14 @@ function loadPage(page) {
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
                         <p>${STORE[i].short_description}</p>
-                        <button class="thumbButton" onclick="on()">
+                        <button class="anchor" onclick="on()" id="${STORE[i].overlayID}">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
-                        </button>    
+                        </button>
+                         
                         <div class="buttonhome">
-                            <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client</a></button>
-                            <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API</a></button>
-                            <button class="button live"><a class="alink" href="${STORE[i].liveLink}" target="_blank">Live</a></button>
+                            <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Client</a>
+                            <a class="alink repo" href="${STORE[i].apiRepoLink}" target="_blank">API</a>
+                            <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
                         </div>
                     </article>`)
             }
@@ -92,9 +94,9 @@ function loadPage(page) {
         <div class = "main" class="aboutmain">         
             <section class = "about-me">
                 <h1>About Me</h1>
-                <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off of one another, and 3) commitment to community outreach programs. </p><br>
-                <p>Why the switch? Good question. I enjoy engineering quite a bit! I love to work with my hands and to solve complex problems. I was able to do a lot of traveling during my engineering career, but with that came a physical toll. I also stopped learning, as I'd been boxed into a career niche. My goal in life is to keep learning for as long as I am able in any field, and engineering just couldn't fulfill this for me. I have always loved coding and it was just the right time to dive in and learn. So far it's been one of the best decisions I have ever made. I can't wait to complete my career change and I couldn't be happier!<p><br>
-                <p>A bit more about me: I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times. When I was younger I loved to volunteer and it has been several years since I had the time or energy, but community outreach is something I am passionate about and would like to start doing again.</p>
+                <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off of one another, and 3) commitment to community outreach programs. </p>
+                <p>Why the switch? Good question. I enjoy engineering quite a bit! I love to work with my hands and to solve complex problems. I was able to do a lot of traveling during my engineering career, but with that came a physical toll. I also stopped learning, as I'd been boxed into a career niche. My goal in life is to keep learning for as long as I am able in any field. I have always loved coding and it was just the right time to dive in and learn. So far it's been one of the best decisions I have ever made. I can't wait to complete my career change and I couldn't be happier!<p>
+                <p>A bit more about me: I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times.</p>
                 <div class="imgcontainer">
                     <img src="pictures/skyline.JPG" alt="The Atlanta Skyline" class="img">
                     <p class="picturedescription">The Atlanta Skyline from the top of the Clermont Lounge</p>
@@ -125,40 +127,16 @@ function loadPage(page) {
                 
             </div> `)
     };
-
-    // load contact page when link at bottom is clicked
-    if (page === 'contact') {
-        $('.mainload').html(
-            `
-        <div id="menuoverlay">
-                <div id="menutext">
-                </div>  
-        </div>
-        <div class = "main" class="contactmain">
-            <section class = "contact-page">
-                <h1>Contact and Links for Julia Fehr</h1>
-                <div class="links">
-                    <button class="linkedin"><a href="https://linkedin.com/in/julia-fehr-b5447b41" target="_blank">LinkedIn</a></button>
-                    <button class="email"><a href="mailto:09jwithers@gmail.com">Email</a></button>
-                    <button class="github"><a href="https://github.com/juliawithers" target="_blank">Github</a></button>
-                    <div class="imgcontainer">
-                        <img src="pictures/stain.JPG" alt="Beautiful stain glass of St. Chapelle, Paris" class="img">
-                       <p class="picturedescription">The stain glass windows inside St. Chapelle, Paris</p>
-                    </div>
-                </div> 
-            </section> 
-        </div>`)
-    };
 }; //end of function loadPage.
 
 // render the overlay when the thumbnail on the project page is clicked
 function on() {
-    $('.thumbButton').on('click', function (e) {
+    $('.anchor').on('click', function (e) {
         document.getElementById("overlay").style.display = "block";
         const id = $(e.target).attr('id')
         for (let i = 0; i < STORE.length; i++) {
             if (id === STORE[i].overlayID) {
-                if (STORE[i].apiRepoLink === ''){
+                if (STORE[i].apiRepoLink === '') {
                     $('#text').html(
                         `<section class="overlay" onclick="off()">
                             <img id="x" src="pictures/x_out.png" onclick="off()">
@@ -166,30 +144,29 @@ function on() {
                             <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
                                 <div class="buttonhome-overlay">
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a></button>
-                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">Live</a></button>
+                                <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Client</a>
+                                <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
                                 </div> 
                                 <div class="image-container">
-                                
+
                                 </div>
                         </section>`)
                     $('body').css('overflow', 'hidden');
                     renderOverlayImages(STORE[i])
-                } else if (STORE[i].apiRepoLink !== ''){
+                } else if (STORE[i].apiRepoLink !== '') {
                     $('#text').html(
                         `<section class="overlay" onclick="off()">
-                            <img id="x" src="pictures/x_out.png" onclick="off()">
+                            <img id="x" src="pictures/x_out.png">
                             <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
                             <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
-                                <div class="buttonhome-overlay">
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client</a></button>
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API</a></button>
-                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">Live</a></button>
+                            <div class="buttonhome-overlay">
+                                <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Client</a>
+                                <a class="alink repo" href="${STORE[i].apiRepoLink}" target="_blank">API</a>
+                                <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
                                 </div> 
                                 <div class="image-container">
-                                
-                                </div>
+                            </div>
                         </section>`)
                     $('body').css('overflow', 'hidden');
                     renderOverlayImages(STORE[i])
@@ -216,12 +193,14 @@ function onMenu() {
     $('#menutext').html(
         `<section class="menuoverlay">
             <img id="x" src="pictures/x_out.png" onclick="offMenu()">
-            <ul class = "ham-nav">
-                <li class="ham-nav-item"><a id="index" onclick="offMenu();loadPage('index')">Home</a></li>
-                <li class="ham-nav-item"><a id="projects" onclick="offMenu();loadPage('projects')">Projects</a></li>
-                <li class="ham-nav-item"><a id="about" onclick="offMenu();loadPage('about')">About</a></li>
-                <li class="ham-nav-item"><a id="contact" onclick="loadPage('contact')">Contact</a></li> 
-            </ul>
+            <nav role="navigation" aria-label="navigation">
+                <ul class = "ham-nav">
+                    <li class="ham-nav-item"><button class="nav-button" role="menuitem" id="index" onclick="loadPage('index')">Home</button></li>
+                    <li class="ham-nav-item"><button class="nav-button" role="menuitem" id="projects" onclick="loadPage('projects')">Projects</button></li>
+                    <li class="ham-nav-item"><button class="nav-button" role="menuitem" id="about" onclick="loadPage('about')">About</button></li>
+                    <li class="ham-nav-item"><button class="nav-button" role="menuitem" id="contact" onclick="loadPage('contact')">Contact</button></li>
+                </ul>
+            </nav>
         </section>`)
     $('body').css('overflow', 'hidden');
 }

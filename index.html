@@ -7,19 +7,20 @@
     <link href="style.css" rel="stylesheet" type="text/css" /> 
     <link href="https://fonts.googleapis.com/css?family=Karla%7CRubik&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
-    <!-- <a role="image by" href="https://pixabay.com/users/Fotocitizen-397314/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1501710">Jorge Guillen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1501710">Pixabay</a> -->
 </head>
 <body class="herobody">
     <header class="nav-bar">
-        <ul class="nav">
-            <li class="nav-item"><a id="index" onclick="loadPage('index')">Home</a></li>
-            <li class="nav-item"><a id="projects" onclick="loadPage('projects')">Projects</a></li>
-            <li class="nav-item"><a id="about" onclick="loadPage('about')">About</a></li>
-            <li class="nav-item"><a id="contact" onclick="loadPage('contact')">Contact</a></li>
-            <li class="hamburger"><img id="hamburger" src="pictures/hamburger.png" onclick="onMenu()" alt="Hamburger Menu for Smaller Screensize"></li>
-        </ul>
+        <nav role="navigation" aria-label="navigation">
+            <ul class="nav" role="menu">
+                <li class="nav-item"><button class="nav-button" role="menuitem" id="index" onclick="loadPage('index')">Home</button></li>
+                <li class="nav-item"><button class="nav-button" role="menuitem" id="projects" onclick="loadPage('projects')">Projects</button></li>
+                <li class="nav-item"><button class="nav-button" role="menuitem" id="about" onclick="loadPage('about')">About</button></li>
+                <li class="nav-item"><button class="nav-button" role="menuitem" id="contact" onclick="loadPage('contact')">Contact</button></li>
+                <li class="hamburger"><img id="hamburger" src="pictures/hamburger.png" onclick="onMenu()" alt="Hamburger Menu for Smaller Screensize"></li>
+            </ul>         
+        </nav>    
     </header>
-    <main class="mainload">
+    <main class="mainload" onkeydown="off()">
         <div id="menuoverlay">
             <div id="menutext">
             </div>  
