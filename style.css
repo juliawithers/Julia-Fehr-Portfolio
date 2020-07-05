@@ -326,6 +326,10 @@ textarea{
 .thumbButton {
     margin-bottom: 10px;
 }  
+.repo, .live {
+    width: 60px;
+    text-align: center;
+}
 @media screen and (min-width: 350px) {
     .articles{
         height: 300px;

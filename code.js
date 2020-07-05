@@ -72,8 +72,8 @@ function loadPage(page) {
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
                         </button>    
                         <div class="buttonhome">
-                            <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client Repo</a></button>
-                            <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API Repo</a></button>
+                            <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client</a></button>
+                            <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API</a></button>
                             <button class="button live"><a class="alink" href="${STORE[i].liveLink}" target="_blank">Live</a></button>
                         </div>
                     </article>`)
@@ -166,8 +166,8 @@ function on() {
                             <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
                                 <div class="buttonhome-overlay">
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">View Repo</a></button>
-                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">View Live</a></button>
+                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a></button>
+                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">Live</a></button>
                                 </div> 
                                 <div class="image-container">
                                 
@@ -183,9 +183,9 @@ function on() {
                             <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
                                 <div class="buttonhome-overlay">
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client Repo</a></button>
-                                    <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API Repo</a></button>
-                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">View Live</a></button>
+                                    <button class="button repo" ><a class="alink" href="${STORE[i].clientRepoLink}" target="_blank">Client</a></button>
+                                    <button class="button repo" ><a class="alink" href="${STORE[i].apiRepoLink}" target="_blank">API</a></button>
+                                    <button class="button live"><a class="alink" href="${STORE[i].liveLink} " target="_blank">Live</a></button>
                                 </div> 
                                 <div class="image-container">
                                 
