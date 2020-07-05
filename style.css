@@ -182,6 +182,7 @@ main>.imgcontainer{
     cursor: pointer;
     margin-bottom: 5px;
     margin-top: 15px;
+    text-align: center;
 }
 .buttonhome{
     display: none;
