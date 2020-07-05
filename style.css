@@ -167,10 +167,13 @@ main>.imgcontainer{
 .articles{
     border: 2px solid black;
     box-shadow: 5px 5px #5085a5;
-    height: 200px;
+    height: 300px;
     width: 200px;
     min-width: 200px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .button{
     border: 1px solid black;
@@ -320,27 +323,33 @@ textarea{
     height: 30px;
     width: 100%; 
 }
+.thumbButton {
+    margin-bottom: 10px;
+}  
 @media screen and (min-width: 350px) {
     .articles{
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 275px;
         min-width: 250px;
     }
     .articles >.thumbnail{
         width:110px;
         height:110px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .articles > p{
         line-height: 21px;
         margin: 7px;
-        font-size: 16px;
+        font-size: 12px;
     }
     .thumbButton>.thumbnail{
         width:110px;
         height:110px;
         cursor: pointer;
         display: block;
-    }      
+        /* padding-bottom: 15px; */
+    }    
 }
 
 @media screen and (min-width: 470px){
@@ -353,6 +362,11 @@ textarea{
         justify-content: space-evenly;
         padding-top: 15px; 
     } 
+    .articles{
+        height: 300px;
+        width: 300px;
+        min-width: 250px;
+    }
     .hamburger{
         display: none;
         width: 0px;
@@ -381,6 +395,9 @@ textarea{
         flex-direction: row;
         justify-content: space-around;
     }  
+    .thumbButton {
+        margin-bottom: 0px;
+    }
 }
 @media screen and (min-width: 750px){
     /* Universal Section settings */
@@ -405,8 +422,8 @@ textarea{
 }
 @media screen and (min-width: 1150px){
     .articles{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         margin: 15px;
     }
     /* adjust the thumbnail image size */
@@ -415,8 +432,8 @@ textarea{
         height: 300px;
     }
     .thumbButton>.thumbnail{
-        width:150px;
-        height:150px;
+        width:200px;
+        height:200px;
     }
     .art-cont{
         display: flex;
