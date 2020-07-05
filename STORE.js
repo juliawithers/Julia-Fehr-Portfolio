@@ -91,8 +91,8 @@ const STORE = [
     },
     {
         title: "inSUREance",
-        short_description: "Find providers near you that take your insurance. Intended for users seeking a doctor when they are unfamiliar with the area. Built because I know all too well what it's like to get sick out of town!",
-        long_description: "Find providers near you that take your insurance. Intended for users seeking a doctor when they are unfamiliar with the area. Built because I know all too well what it's like to get sick out of town! Enter your address or zipcode, a search radius, and a specialty if you want.",
+        short_description: "Find providers near you that take your insurance. Intended for users seeking a doctor when they in an unfamiliar area or new to town. Built because I know all too well what it's like to get sick out of town!",
+        long_description: "Find providers near you that take your insurance. Intended for users seeking a doctor when they in an unfamiliar area or new to town. Built because I know all too well what it's like to get sick out of town! Enter your address or zipcode, a search radius, and a specialty if you want.",
         languages: "HTML, CSS, JavaScript, jQuery, Read API calls using the BetterDoctor API. NOTE: As of July 1st, 2020 the BetterDoctor API is down. No response from the company. I am working on finding an alternate API.", 
         clientRepoLink: "https://github.com/juliawithers/inSUREance",
         apiRepoLink: '',
@@ -124,8 +124,8 @@ const STORE = [
     },
     {
         title: "Game of Thrones Quiz",
-        short_description: "A simple quiz on the subject of Game of Thrones. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test event he biggest GOT's fans knowledge.",
-        long_description: "A simple quiz on the subject of Game of Thrones that will put your GOT knowledge to the test. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test event he biggest GOT's fans knowledge. Enjoy!",
+        short_description: "A simple quiz on the subject of Game of Thrones. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test even the biggest GOT's fans knowledge.",
+        long_description: "A simple quiz on the subject of Game of Thrones that will put your GOT knowledge to the test. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test even the biggest GOT's fans knowledge. Enjoy!",
         languages: "HTML, CSS, JavaScript, jQuery",
         clientRepoLink: "https://github.com/juliawithers/quiz-app",
         apiRepoLink: '',
