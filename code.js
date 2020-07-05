@@ -4,6 +4,7 @@ function loadPage(page) {
     // if contact/about/project/home load those pages
     // load contact page
     // load contact page when link at bottom is clicked
+    $('body').css('overflow', 'visible');
     if (page === 'contact') {
         $('.mainload').html(
             `
@@ -148,7 +149,6 @@ function on() {
                                 <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
                                 </div> 
                                 <div class="image-container">
-
                                 </div>
                         </section>`)
                     $('body').css('overflow', 'hidden');
