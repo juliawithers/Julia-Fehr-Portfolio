@@ -430,7 +430,7 @@ textarea{
 }
 @media screen and (min-width: 1150px){
     .articles{
-        width: 400px;
+        width: 600px;
         height: 400px;
         margin: 15px;
     }
@@ -438,6 +438,9 @@ textarea{
     .articles >.thumbnail{
         width: 300px;
         height: 300px;
+    }
+    .articles > p{
+        font-size: 16px;
     }
     .thumbButton>.thumbnail{
         width:200px;
