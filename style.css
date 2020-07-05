@@ -188,8 +188,6 @@ main>.imgcontainer{
 .articles{
     border: 2px solid black;
     box-shadow: 5px 5px #5085a5;
-    height: 300px;
-    width: 200px;
     min-width: 200px;
     margin-bottom: 10px;
     display: flex;
@@ -370,8 +368,6 @@ textarea{
 }
 @media screen and (min-width: 350px) {
     .articles{
-        height: 300px;
-        width: 275px;
         min-width: 250px;
     }
     .anchor >.thumbnail{
@@ -403,9 +399,9 @@ textarea{
         padding-top: 15px; 
     } 
     .articles{
-        height: 300px;
-        width: 300px;
+        height: 310px;
         min-width: 250px;
+        max-width: 600px;
     }
     .hamburger{
         display: none;
@@ -449,6 +445,16 @@ textarea{
    .img{
        max-width: 750px;
    }
+   .articles{
+       height: 400px;
+   }
+   .articles > p{
+    font-size: 16px;
+    }
+    .anchor>.thumbnail{
+        width: 210px;
+        height: 210px;
+    }
 }
 @media screen and (min-width: 1000px){
     section{
@@ -458,17 +464,12 @@ textarea{
 }
 @media screen and (min-width: 1150px){
     .articles{
-        width: 700px;
-        height: 400px;
         margin: 15px;
     }
     /* adjust the thumbnail image size */
     .anchor>.thumbnail{
         width: 210px;
         height: 210px;
-    }
-    .articles > p{
-        font-size: 16px;
     }
     .art-cont{
         display: flex;

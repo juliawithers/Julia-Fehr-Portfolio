@@ -1,8 +1,8 @@
 const STORE = [
     {
         title: "Stock'Em!",
-        short_description: "An app for tracking inventory changes. Intended for use by small companies looking to stay organized. Built because I work daily with inventory and understand the importance of FIFO.",
-        long_description:  "An app for tracking inventory changes, past orders, and customer/supplier contacts. Intended for use by small companies looking to stay organized. Built because I work daily with inventory and understand the importance of FIFO. Sorting is enabled on all tables, while filtering is enabled on inventory and past orders only.",
+        short_description: "An app for tracking inventory changes. Intended for use by small companies looking to stay organized. Built because I work daily with inventory and understand the importance of FIFO. It can be frustratingly overcomplicated if using something like SAP. I wanted to create a simple elegant app for daily use.",
+        long_description:  "An app for tracking inventory changes, past orders, and customer/supplier contacts. Intended for use by small companies looking to stay organized. Built because I work daily with inventory and understand the importance of FIFO. It is something can be frustratingly overcomplicated if using something like SAP. I wanted to create a simple elegant app for daily use. Sorting is enabled on all tables, while filtering is enabled on inventory and past orders only.",
         languages: "React, NodeJs, ExpressJS, PostgreSQL, HTML, CSS, JavaScript, jQuery, Reactable table library",
         clientRepoLink: "https://github.com/juliawithers/stock-em",
         apiRepoLink: "https://github.com/juliawithers/stock-em-api",
@@ -58,8 +58,8 @@ const STORE = [
     },
     {
         title: "Virtual Fight Club",
-        short_description: "Create a character and fight opponents! Intended for gamers looking for a short game. An app born from my own passion!",
-        long_description: "Create a character and fight opponents! Intended for gamers looking for a short game. An app born from my own passion! Level up once you reach 50 points and update your character attributes. Strength, Intelligence, Charisma, and Agility are the attributes you must work with.",
+        short_description: "Create a character and fight opponents! Intended for gamers looking for a short game. An app born from my own passion for gaming! I really wanted to create this app because I've always wanted to create a game.",
+        long_description: "Create a character and fight opponents! Intended for gamers looking for a short game. An app born from my own passion for gaming! Level up once you reach 50 points and update your character attributes. Strength, Intelligence, Charisma, and Agility are the attributes you must work with.",
         languages: "React, NodeJs, ExpressJS, PostgreSQL, HTML, CSS, JavaScript, jQuery",
         clientRepoLink: "https://github.com/juliawithers/virtual-fight-club",
         apiRepoLink: "https://github.com/juliawithers/vfc-api",
@@ -124,8 +124,8 @@ const STORE = [
     },
     {
         title: "Game of Thrones Quiz",
-        short_description: "A simple quiz on the subject of Game of Thrones. Made purely for fun and intended for GOT fans!",
-        long_description: "A simple quiz on the subject of Game of Thrones that will put your GOT knowledge to the test. Made purely for fun and intended for GOT fans! Enjoy!",
+        short_description: "A simple quiz on the subject of Game of Thrones. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test event he biggest GOT's fans knowledge.",
+        long_description: "A simple quiz on the subject of Game of Thrones that will put your GOT knowledge to the test. Made purely for fun and intended for GOT fans! Being a huge GOT fan I intend to expand on this quiz to test event he biggest GOT's fans knowledge. Enjoy!",
         languages: "HTML, CSS, JavaScript, jQuery",
         clientRepoLink: "https://github.com/juliawithers/quiz-app",
         apiRepoLink: '',

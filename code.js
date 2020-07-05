@@ -2,6 +2,7 @@
 // Load each page:
 function loadPage(page) {
     // if contact/about/project/home load those pages
+    
     // load contact page
     // load contact page when link at bottom is clicked
     $('body').css('overflow', 'visible');
@@ -95,7 +96,7 @@ function loadPage(page) {
         <div class = "main" class="aboutmain">         
             <section class = "about-me">
                 <h1>About Me</h1>
-                <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off of one another, and 3) commitment to community outreach programs. </p>
+                <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off of one another, and 3) commitment to community outreach programs. I'm looking forward to working on a team of likeminded developers and expanding my knowledge base.</p>
                 <p>Why the switch? Good question. I enjoy engineering quite a bit! I love to work with my hands and to solve complex problems. I was able to do a lot of traveling during my engineering career, but with that came a physical toll. I also stopped learning, as I'd been boxed into a career niche. My goal in life is to keep learning for as long as I am able in any field. I have always loved coding and it was just the right time to dive in and learn. So far it's been one of the best decisions I have ever made. I can't wait to complete my career change and I couldn't be happier!<p>
                 <p>A bit more about me: I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times.</p>
                 <div class="imgcontainer">
