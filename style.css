@@ -183,6 +183,7 @@ main>.imgcontainer{
     margin-bottom: 5px;
     margin-top: 15px;
     text-align: center;
+    padding: 0px;
 }
 .buttonhome{
     display: none;
@@ -194,6 +195,8 @@ main>.imgcontainer{
 }
 .button>.alink{
    text-decoration: none; 
+   margin-left: auto;
+   margin-right: auto;
 }
 .articles:hover{
     box-shadow: 7px 7px #5085a5;
@@ -329,7 +332,7 @@ textarea{
 }  
 .repo, .live {
     width: 60px;
-    text-align: center;
+    /* text-align: center; */
 }
 @media screen and (min-width: 350px) {
     .articles{
