@@ -104,7 +104,6 @@ main{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-    cursor: pointer;
     overflow-y:scroll;
 }
 #menutext{
@@ -125,6 +124,7 @@ main{
     float: right;
     width: 30px;
     padding: 2px;
+    cursor: pointer;
 }
 /* Text for h1,h2,h3,p,a,legend, and inputs */
 h1,h2,h3{
@@ -272,7 +272,6 @@ main>.imgcontainer{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-    cursor: pointer;
     overflow-y:scroll;
 }
 #text{
@@ -365,6 +364,7 @@ textarea{
     width: 60px;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 2px;
 }
 @media screen and (min-width: 350px) {
     .articles{

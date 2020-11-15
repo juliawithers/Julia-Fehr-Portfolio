@@ -15,43 +15,48 @@ const STORE = [
         overlayThumbs: [
             {
                 bigThumb: "pictures/StockEm_Large_Inventory.PNG",
-                altBigThumb: "Large screen view of inventory page"
+                altBigThumb: "Large screen view of inventory page",
+                desc: "Main inventory page showing current and updated inventory for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_Large_Customers.PNG",
-                altBigThumb: "Large screen view of current customers page"
+                altBigThumb: "Large screen view of current customers page",
+                desc: "Page showing current and updated customers for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_Large_Suppliers.PNG",
-                altBigThumb: "Large screen view of current suppliers page"
+                altBigThumb: "Large screen view of current suppliers page",
+                desc: "Page showing current and updated suppliers for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_Large_PastOrders.PNG",
-                altBigThumb: "Large screen view of past orders page"
-            },
-            {
-                bigThumb: "pictures/StockEm_Large_PastOrders.PNG",
-                altBigThumb: "Large screen view of past orders page"
+                altBigThumb: "Large screen view of past orders page",
+                desc: "Page showing past orders for example user. I hope to implement a traking page to show a breakdown on items purchased:"
             },
             {
                 bigThumb: "pictures/StockEm_AddEdit_Customer_Info.PNG",
-                altBigThumb: "Add and Edit Customer Information Page"
+                altBigThumb: "Add and Edit Customer Information Page",
+                desc: "Page for adding or editing current customers for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_AddEdit_Supplier_Info.PNG",
-                altBigThumb: "Add and Edit Supplier Information Page"
+                altBigThumb: "Add and Edit Supplier Information Page",
+                desc: "Page for adding or editing current suppliers for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_Add_SKUs.PNG",
-                altBigThumb: "Add SKUs Page"
+                altBigThumb: "Add SKUs Page",
+                desc: "Page for adding or editing current SKUs for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_CustomerPO.PNG",
-                altBigThumb: "Add Customer PO Page"
+                altBigThumb: "Add Customer PO Page",
+                desc: "Page for entering customer POs for example user:"
             },
             {
                 bigThumb: "pictures/StockEm_SupplierPO.PNG",
-                altBigThumb: "Add Supplier PO Page"
+                altBigThumb: "Add Supplier PO Page",
+                desc: "Page for entering supplier POs for example user:"
             }
         ],
         overlayID: "StockEm"
@@ -72,19 +77,23 @@ const STORE = [
         overlayThumbs: [
             {
                 bigThumb: "pictures/VFCLandingPage.PNG",
-                altBigThumb: "Landing page for Virtual Fight Club"
+                altBigThumb: "Landing page for Virtual Fight Club",
+                desc: "Landing page for logging in or creating an account:"
             },
             {
                 bigThumb: "pictures/VFCFightPage.PNG",
-                altBigThumb: "Fight Page for Virtual Fight Club"
+                altBigThumb: "Fight Page for Virtual Fight Club",
+                desc: "'Fight' page for users to fight opponents!:"
             },
             {
                 bigThumb: "pictures/VFCCharacterPage.PNG",
-                altBigThumb: "Character Description and Update Page for Virtual Fight Club"
+                altBigThumb: "Character Description and Update Page for Virtual Fight Club",
+                desc: "Character page for creating or editing their character attributes:"
             },
             {
                 bigThumb: "pictures/VFCAboutPage.PNG",
-                altBigThumb: "About Page for Virtual Fight Club"
+                altBigThumb: "About Page for Virtual Fight Club",
+                desc: "About page for the game:"
             }
         ],
         overlayID: "VFC"
@@ -105,19 +114,23 @@ const STORE = [
         overlayThumbs: [
             {
                 bigThumb: "pictures/LandingPage.PNG",
-                altBigThumb: "Landing page for inSUREance"
+                altBigThumb: "Landing page for inSUREance",
+                desc: "Landing page where you enter the search parameters:"
             },
             {
                 bigThumb: "pictures/ResultsLoaded.PNG",
-                altBigThumb: "Results loaded"
+                altBigThumb: "Results loaded",
+                desc: "The view of loaded results from the searh parameters:"
             },
             {
                 bigThumb: "pictures/ShowMore.PNG",
-                altBigThumb: "Short configuration for results"
+                altBigThumb: "Short configuration for results",
+                desc: "The shortened view of individual results:"
             },
             {
                 bigThumb: "pictures/ShowLess.PNG",
-                altBigThumb: "Long configuration for results"
+                altBigThumb: "Long configuration for results",
+                desc: "The long view for individual results:"
             }
         ],
         overlayID: "ins"
@@ -137,16 +150,24 @@ const STORE = [
         },
         overlayThumbs: [
             {
+                bigThumb: "pictures/GOT_Thumb_Original.PNG",
+                altBigThumb: "Game of Thrones Landing Page",
+                desc: "Landing page for the quiz:"
+            },
+            {
                 bigThumb: "pictures/GOT_Thumb_Question.PNG",
-                altBigThumb: "Game of Thrones Question 1"
+                altBigThumb: "Game of Thrones Question 1",
+                desc: "View of one of the questions:"
             },
             {
                 bigThumb: "pictures/GOT_Thumb_Question_correct.PNG",
-                altBigThumb: "Correct Answer Screenshot"
+                altBigThumb: "Correct Answer Screenshot",
+                desc: "View if the answer is correct:"
             },
             {
                 bigThumb: "pictures/GOT_Thumb_Question_incorrect.PNG",
-                altBigThumb: "In Answer Screenshot"
+                altBigThumb: "In Answer Screenshot",
+                desc: "View if the answer is incorrect:"
             }
         ],
         overlayID: "GOT",

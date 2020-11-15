@@ -57,29 +57,19 @@ function loadPage(page) {
                 $('.art-cont').append(
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                        <p>${STORE[i].short_description}</p>
+                        <p>${STORE[i].short_description} Link to <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a>. Link to <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a></p>
                         <button class="anchor" onclick="on()" id="${STORE[i].overlayID}">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
-                        </button>
-                        <div class="buttonhome">
-                            <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Repo</a>
-                            <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
-                        </div>   
+                        </button>   
                     </article>`)
             } else if (STORE[i].apiRepoLink !== '') {
                 $('.art-cont').append(
                     `<article class = "articles">
                         <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
-                        <p>${STORE[i].short_description}</p>
+                        <p>${STORE[i].short_description} Link to <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Client</a>. Link to <a class="alink repo" href="${STORE[i].apiRepoLink}" target="_blank">API</a>. Link to <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a></p>
                         <button class="anchor" onclick="on()" id="${STORE[i].overlayID}">
                             <img src="${STORE[i].thumb.smallThumb}" alt="${STORE[i].thumb.altSmallThumb}" class = "thumbnail" id="${STORE[i].overlayID}">
                         </button>
-                         
-                        <div class="buttonhome">
-                            <a class="alink repo" href="${STORE[i].clientRepoLink}" target="_blank">Client</a>
-                            <a class="alink repo" href="${STORE[i].apiRepoLink}" target="_blank">API</a>
-                            <a class="alink live" href="${STORE[i].liveLink}" target="_blank">Live</a>
-                        </div>
                     </article>`)
             }
         }
@@ -96,6 +86,7 @@ function loadPage(page) {
         <div class = "main" class="aboutmain">         
             <section class = "about-me">
                 <h1>About Me</h1>
+                <img src="pictures/Me and Einstein GT.JPG" alt="GT graduation" class="img">
                 <p>I was born and raised in Atlanta. I recently graduated the Full Stack Engineering boot camp at Thinkful. I have a strong technical background having graduated from Georgia Tech with a degree in Mechanical Engineering. I enjoy working on full-stack projects as I find enjoyment on both front-end and back-end programming. My current goal is to find a company that fosters 1) commitment to expanding knowledge, 2) a healthy working environment where teams thrive off of one another, and 3) commitment to community outreach programs. I'm looking forward to working on a team of likeminded developers and expanding my knowledge base.</p>
                 <p>Why the switch? Good question. I enjoy engineering quite a bit! I love to work with my hands and to solve complex problems. I was able to do a lot of traveling during my engineering career, but with that came a physical toll. I also stopped learning, as I'd been boxed into a career niche. My goal in life is to keep learning for as long as I am able in any field. I have always loved coding and it was just the right time to dive in and learn. So far it's been one of the best decisions I have ever made. I can't wait to complete my career change and I couldn't be happier!<p>
                 <p>A bit more about me: I enjoy reading in my spare time and sketching on occasion. I have a deep love for Sci-Fi and the endless technological possibilities my favorite writers conjure up. I also enjoy a good RPG or video game when time permits. That being said, I’m partial to spending time outdoors and find it necessary to clear my head at times.</p>
@@ -140,7 +131,7 @@ function on() {
             if (id === STORE[i].overlayID) {
                 if (STORE[i].apiRepoLink === '') {
                     $('#text').html(
-                        `<section class="overlay" onclick="off()">
+                        `<section class="overlay">
                             <img id="x" src="pictures/x_out.png" onclick="off()">
                             <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
                             <p>${STORE[i].long_description}</p>
@@ -156,8 +147,8 @@ function on() {
                     renderOverlayImages(STORE[i])
                 } else if (STORE[i].apiRepoLink !== '') {
                     $('#text').html(
-                        `<section class="overlay" onclick="off()">
-                            <img id="x" src="pictures/x_out.png">
+                        `<section class="overlay">
+                            <img id="x" src="pictures/x_out.png" onclick="off()">
                             <p class="projectTitle"><strong> ${STORE[i].title} </strong></p>
                             <p>${STORE[i].long_description}</p>
                             <p>${STORE[i].languages}</p>
@@ -180,7 +171,8 @@ function on() {
 function renderOverlayImages(store) {
     for (let i = 0; i < store.overlayThumbs.length; i++) {
         $('.image-container').append(
-            `<img src="${store.overlayThumbs[i].bigThumb}" alt="${store.overlayThumbs[i].altBigThumb}" class="largethumb">`
+            `<p>${store.overlayThumbs[i].desc}</p>
+            <img src="${store.overlayThumbs[i].bigThumb}" alt="${store.overlayThumbs[i].altBigThumb}" class="largethumb">`
         )
     }
 }
